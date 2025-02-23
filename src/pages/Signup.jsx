@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Button } from "@/components/ui/button";
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -84,10 +85,17 @@ const Signup = () => {
 
       <p className="mt-4 text-sm text-gray-600">
         Already have an account?{' '}
-        <a href="/" className="text-indigo-600 font-medium hover:underline">
+        <Link to="/"  className="text-indigo-600 font-medium hover:underline">
           Login
-        </a>
+        </Link>
+
+
+        
+        
       </p>
+
+
+     
 
       <p className="mt-2 text-xs text-gray-500 text-center max-w-sm">
         By clicking 'Continue', you acknowledge that you have read and accept the{' '}

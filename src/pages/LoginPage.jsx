@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -84,9 +85,9 @@ const LoginPage = () => {
         {/* Sign-up Link */}
         <p className="text-center text-gray-500 text-sm mt-6">
           Don't have an account?{' '}
-          <a href="/Signup" className="text-blue-600 hover:text-blue-800">
-            Sign Up
-          </a>
+          <Link to="/Signup" className="text-blue-600 hover:text-blue-800">
+    Sign Up
+  </Link>
         </p>
       </div>
     </div>
