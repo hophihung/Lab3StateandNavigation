@@ -98,15 +98,21 @@ const Signup = () => {
      
 
       <p className="mt-2 text-xs text-gray-500 text-center max-w-sm">
-        By clicking 'Continue', you acknowledge that you have read and accept the{' '}
-        <a href="#" className="underline text-indigo-600">
-          Terms of Service
-        </a>{' '}
-        and{' '}
-        <a href="#" className="underline text-indigo-600">
-          Privacy Policy
-        </a>.
-      </p>
+      By clicking 'Continue', you acknowledge that you have read and accept the{' '}
+      <span
+        onClick={() => navigate('/terms-of-service')}
+        className="underline text-indigo-600 cursor-pointer"
+      >
+        Terms of Service
+      </span>{' '}
+      and{' '}
+      <span
+        onClick={() => navigate('/privacy-policy')}
+        className="underline text-indigo-600 cursor-pointer"
+      >
+        Privacy Policy
+      </span>.
+    </p>
     </div>
   );
 };

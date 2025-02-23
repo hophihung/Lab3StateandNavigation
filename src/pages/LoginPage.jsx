@@ -84,11 +84,14 @@ const LoginPage = () => {
 
         {/* Sign-up Link */}
         <p className="text-center text-gray-500 text-sm mt-6">
-          Don't have an account?{' '}
-          <Link to="/Signup" className="text-blue-600 hover:text-blue-800">
-    Sign Up
-  </Link>
-        </p>
+      Don't have an account?{' '}
+      <span
+        onClick={() => navigate('/signup')}
+        className="text-blue-600 hover:text-blue-800 cursor-pointer"
+      >
+        Sign Up
+      </span>
+    </p>
       </div>
     </div>
   );
